@@ -1,0 +1,11 @@
+Tasks to complete for website
+    -Home Page
+        -Email button
+            -open modal to send messages directly to walkerkyle0214@gmail.com
+
+    -About page
+        -picture of me 
+        -paragraph demonstrating my skillest
+        - section showing my techincal skills
+
+    -Host website

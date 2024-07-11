@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(20,20,20)
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* The entire scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 6px;
+
+}
+
+/* The background of the scrollbar tray */
+::-webkit-scrollbar-track {
+  background: transparent;
+  /*rgba(255, 255, 255, 0.30);  White with 30% opacity */
+  border-radius: 6px;
+}
+
+/* The scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+
+/* The scrollbar handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.primary-bg{
+  background: rgb(4, 13, 18)
+}
+
+.navbar-bg{
+  background: #183D3D
+}
+
+.even-shadow{
+  box-shadow: 0 0 10px rgba(0,0,0,0.3); /* Even shadow on all sides */
+}
+
+.skill-icon {
+  transition: transform 0.3s ease;
+}
+
+.skill-icon:hover {
+  transform: scale(1.1);
+}
+.nav-dropdown-transition {
+  transition: max-height 0.5s ease-out;
+  overflow: hidden;
+}
+
+.nav-dropdown-transition-0 {
+  transition: none;
+  overflow: auto;
+}
+
+
+.icon-standard {
+  font-size: 1.5em; /* Default size */
+}
+
+.links-container {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) { /* Adjust the min-width as needed */
+  .icon-standard {
+    font-size: 3em; /* Larger size on medium screens and above */
+  }
+}
+
+
