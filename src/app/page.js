@@ -77,7 +77,7 @@ const Home = () => {
                   fontWeight: 600,
                   fontFamily: "Inter, sans-serif"
                 }}>
-                Hello, I'm Kyle Walker
+                Hello, I&apos;m Kyle Walker
               </h1>
             </div>
             <div className="centered text-center">
