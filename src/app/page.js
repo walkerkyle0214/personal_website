@@ -1,8 +1,11 @@
 'use client'
+import Head from 'next/head';
 import React, { useState } from 'react';
 import Navbar from "./components/Navbar.js";
 import Footer from "./components/Footer.js";
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
+
+
 
 const EmailModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
@@ -49,6 +52,10 @@ const Home = () => {
 
   return (
     <div>
+      <Head>
+        <title>KW | Portfolio</title>
+        <link rel="icon" href="/assets/favicon.ico"/>
+      </Head>
       <Navbar page='/' />
       
       <div className="home-container" style={{
